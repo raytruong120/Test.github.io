@@ -1,0 +1,341 @@
+
+<!----- EMAIL,PHONE,FLAG LOGO ------>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+  <title>Tickets</title>
+  <link rel="stylesheet" href="SST.css">
+  <style>
+  .shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url('delete-icon.png') no-repeat center;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.plus-btn img {
+  margin-top: 2px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+button:focus,
+input:focus {
+  outline:0;
+}
+
+.total-price {
+  /* width: 83px; */
+  /* padding-top: 27px; */
+  /* text-align: center; */
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+  </style>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body style="background-color:#313840;">
+
+<div class="wrapper">
+	<nav class="navbar">
+		<img class="logo" src="Logo2.png">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Speakers.html">Speakers</a></li>
+			<li><a href="Schedule.html">Schedule</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a class="active">Buy Tickets</a></li>
+		</ul>
+	</nav>
+  <center><p class="speakerheader"> Buy tickets to our Conference </p><center>
+
+    <!-- <ul>
+			<li>Student Pack</li>
+			<li>Industry pack x1</li>
+			<li>Industry pack x2</li>
+		</ul> -->
+    <!-- <div class="quantity">
+  <button class="plus-btn" type="button" name="button">
+    <img src="plus.svg" alt="" />
+  </button>
+  <input type="text" name="name" value="1">
+  <button class="minus-btn" type="button" name="button">
+    <img src="minus.svg" alt="" />
+  </button> -->
+
+  <div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Purchases
+    </div>
+
+    <!-- Product #1 -->
+    <div class="item">
+
+      <!-- <div class="image">
+        <img src="item-1.png" alt="" />
+      </div> -->
+
+      <div class="description">
+        <span>Robotics Event</span>
+      </div>
+
+      <div class="quantity">
+        <p class="total-price 59">$59</p>
+
+        <button class="plus-btn" type="button" name="button">
+          <img src="./plus.png" alt="" />
+        </button>
+        <input type="text" name="name" value="0">
+        <button class="minus-btn" type="button" name="button">
+          <img src="./minus.png" alt="" />
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Product #2 -->
+    <div class="item">
+
+
+
+      <div class="description">
+        <span>Startup Businesses</span>
+      </div>
+
+      <div class="quantity">
+        <p class="total-price 65">$65</p>
+
+        <button class="plus-btn" type="button" name="button">
+          <img src="plus.png" alt="" />
+        </button>
+        <input type="text" name="name" value="0">
+        <button class="minus-btn" type="button" name="button">
+          <img src="minus.png" alt="" />
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Product #3 -->
+    <div class="item">
+
+      <div class="description">
+        <span>Cloud Technology</span>
+      </div>
+
+      <div class="quantity">
+        <p class="total-price 87">$87</p>
+
+        <button class="plus-btn" type="button" name="button">
+          <img src="plus.png" alt="" />
+        </button>
+        <input type="text" name="name" value="0">
+        <button class="minus-btn" type="button" name="button">
+          <img src="minus.png" alt="" />
+        </button>
+      </div>
+
+    </div>
+  </div>
+ <button class="button" onclick="location.href='payment.html'">Proceed to Purchase</button>
+
+</div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+$('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+    var obj  = $this.closest('div').find('p');
+    var dollarAmt = parseInt(obj[0].classList[1]);
+    var curr = parseInt(obj[0].innerText.split('$')[1])
+    if (value == 0) {
+      curr = dollarAmt;
+    } else {
+      curr -= dollarAmt;
+    }
+    if (value >= 1) {
+        value = value - 1;
+    } else {
+        value = 0;
+    }
+
+    if (curr < 0) {
+      curr = 0;
+    }
+    $input.val(value);
+    obj[0].innerText = `$${curr}`
+
+});
+
+$('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var obj  = $this.closest('div').find('p');
+    var dollarAmt = parseInt(obj[0].classList[1]);
+    var curr = parseInt(obj[0].innerText.split('$')[1])
+    var value = parseInt($input.val());
+    if (value == 0) {
+      curr = dollarAmt;
+    } else {
+      curr += dollarAmt;
+    }
+    if (value <= 100) {
+        value = value + 1;
+    } else {
+        value =100;
+    }
+    $input.val(value);
+    obj[0].innerText = `$${curr}`
+});
+
+</script>

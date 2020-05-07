@@ -1,0 +1,178 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	background: url(BG2.png) no-repeat;
+	background-size: cover;
+	
+}
+.navbar{
+
+background: #313840;
+}
+.navbar .logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	/*transition: .4s;*/
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: #F47c48;
+	border-radius: 2px;
+}
+
+.contact-section{
+  background: #313840;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.inner-width{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact-section h1{
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.name,.email,.message{
+  background: #313840;
+  border:none;
+  outline: #313840;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.name{
+  float: left;
+  width: 270px;
+}
+
+.email{
+  float: right;
+  width: 270px;
+}
+
+.message{
+  min-width: 100%;
+  max-width: 100%;
+}
+.contact-section button{
+  background:none;
+  color: #888;
+  border: 1px solid #888;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.contact-section button:hover{
+  background: #f47c48;
+  color: #ddd;
+}
+
+
+@media screen and (max-width:600px){
+  .name,.email{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+.middle{
+  position: static;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #313840;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #f47c48;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #888;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #f47c48;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}

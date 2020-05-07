@@ -1,0 +1,289 @@
+/* Main Header Styling */
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper{
+	background: url(BG2.png) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+}
+.navbar .logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	/*transition: 2s;*/
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: #f47c48;
+	border-radius: 2px;
+}
+.container {
+	max-width: 100%;
+	margin-top: 80px;
+}
+
+.banner {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin: auto;
+	display: block;
+}
+
+.center .buttons{
+	margin: 35px 280px;
+}
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	background:#313840;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #f47c48;
+	border-radius: 8px;
+	transition: .4s;
+	position: absolute;
+	top: 100%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.buttons .btn2{
+	margin-left: 200px;
+}
+.buttons button:hover{
+	background:#f47c48;
+}
+
+/* Homepage Speaker Preview Section */
+
+.images h1 {
+	text-align:center;
+	font-family: "montserrat",sans-serif;
+	color: #F47c48;
+	font-size: 300%;
+}
+
+.images h2 {
+	text-align:center;
+	font-family: "montserrat",sans-serif;
+	color: white;
+	font-size: 200%;
+}
+
+.speakerpreview {
+    display:inline-block;
+	text-align:center;
+	margin:20px;
+}
+
+.images {
+	text-align:center;
+	white-space:nowrap;
+}
+
+.circle2 {
+	border-radius: 50%;
+}
+
+p.name {font-size:20px;
+	font-weight:bold;}
+
+/* Below Refers to Speakers Page */
+div.image {
+	float: left;
+    margin: 40px;
+}
+
+div p {text-align: center;}
+
+.speakerheader {
+	font-size:65px;
+	color:#F47c48;
+	text-align:center;
+	margin-top: 5%;
+	line-height:2;
+}
+
+.dateheader {
+	font-size:55px;
+	color:white;
+	text-align:center;
+}
+
+h1.speaker {
+	font-size:45px;
+	color:#F47c48;
+	text-align:center;
+	font-family: "montserrat",sans-serif;
+}
+
+img.circle {
+	border-radius:50%;
+	cursor: pointer;
+	margin: 15px 0;
+}
+
+p {margin:1px;
+	font-size:20px;
+	color: white;
+	font-family: "montserrat",sans-serif;
+}
+
+p.name{font-size:25px;
+	font-weight:bold;
+	font-family: "montserrat",sans-serif;
+}
+
+.model-content {
+	width: 800px;
+	height: 600px;
+	background-color: #A9A9A9;
+	border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	height: auto !important;
+    display: inline-block;
+	border-radius: 30px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.close, .close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9 {
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.bg-modal, .bg-modal1, .bg-modal2, .bg-modal3, .bg-modal4, .bg-modal5, .bg-modal6, .bg-modal7, .bg-modal8, .bg-modal9 {
+	width:100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	top: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'montserrat', sans-serif;
+	background-color:#313840;
+}
+
+
+
+
+/* Below Refers to Contact Page */
+.contact-title
+{
+	margin-top: 100px;
+	color: #fff;
+	/*text-transform: uppercase;*/
+	transition: all 4s ease-in-out;
+}
+.contact-title h1{
+	font-size: 32px;
+	line-height: 64px;
+}
+
+.contact-title h2{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+form
+{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+
+.form-control
+{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input
+{
+	height: 45px;
+}
+
+form .submit
+{
+	background: #ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+/*Schedule Page */
+.box1
+{
+	background: #ff5722;
+	height: 100px;
+	width: 50%;
+	padding: 10px 10px;
+}
+
+.box2
+{
+	background: #A9A9A9;
+	height: 100px;
+	width: 50%;
+	padding: 10px 10px;
+}
+
+/*About Us*/
+.About h1 {
+	text-align:center;
+	font-family: "montserrat",sans-serif;
+	color: #F47c48;
+	font-size: 300%;
+}

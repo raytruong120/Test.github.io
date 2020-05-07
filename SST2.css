@@ -1,0 +1,186 @@
+
+}
+.wrapper{
+	background: url(BG2.png) no-repeat;
+	background:#313840;
+	background-size: cover;
+	height: 100vh;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background:#313840;
+}
+.navbar .logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: #f47c48;
+	border-radius: 2px;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'montserrat', sans-serif;
+}
+section
+{
+	width: 100%;
+	height: 100vh;
+	background: #313840;
+	background-size: cover;
+}
+section .leftBox
+{
+	width: 45%;
+	height: 100%;
+	float: left;
+	padding: 50px;
+	box-sizing: border-box;
+}
+section .leftBox .content
+{
+	color: white;
+	background: rgba(0,0,0,.5);
+	padding: 40px;
+	transition: .5s;
+}
+section .leftBox .content:hover
+{
+	background: #f47c48;
+}
+section .leftBox .content h1 /* event box */
+{
+	margin:0;
+	padding: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+section .leftBox .content p /* event box */
+{
+	margin: 10px 0 0;
+	padding: 0;
+}
+section .events /* inner event box w date */
+{
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	float: right;
+	box-sizing: border-box;
+}
+section .events ul /* inner event box w date */
+{
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	margin: 20;
+	padding:40px;
+	box-sizing: border-box;
+}
+section .events ul li /* inner event box w date */
+{
+	list-style: none;
+	background: #fff;
+	box-sizing: border-box;
+	height: 200px;
+	/*margin: 15px 0;*/
+}
+section .events ul li .time 
+{
+	position: relative;
+	padding: 20px;
+	background: #f47c48;
+	box-sizing: border-box;
+	width: 30%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+section .events ul li:hover .time
+{
+	background: #313840;
+}
+section .events ul li .time h2 /* date */
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 60px;
+	line-height: 45px;
+}
+section .events ul li .time h2 span
+{
+	font-size: 30px;
+}
+section .events ul li .details
+{
+	padding: 20px;
+	background: #fff;
+	box-sizing: border-box;
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+section .events ul li .details h3
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+}
+section .events ul li .details p
+{
+	position: relative;
+	margin: 10px 0 0;
+	padding: 0;
+	font-size: 16px;
+}
+section .events ul li .details a
+{
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 2px solid: #262626;
+	margin-top: 15px;
+	font-size: 18px;
+	transition: .5s;
+}
+section .events ul li .details a:hovet
+{
+	background: #313840;
+	color: #fff;
+	border-color: #313840;
+}
+
+
